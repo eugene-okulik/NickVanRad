@@ -2,7 +2,6 @@ person = ['John', 'Doe', 'New York', '+1372829383739', 'US']
 a, b, c, d, e = person
 print(a, b, c, d, e)
 
-
 text_1 = 'результат операции: 42'
 a = text_1.index(': ') + 1
 b = text_1[a:]
@@ -21,5 +20,3 @@ subjects = ['math', 'biology', 'geography']
 students = ', '.join(students)
 subjects = ', '.join(subjects)
 print(students, 'study these subjects:', subjects)
-
-
