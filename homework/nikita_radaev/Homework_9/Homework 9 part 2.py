@@ -1,13 +1,9 @@
-temperatures = [20, 15, 32, 34, 21, 19, 25, 27, 30, 32, 34, 30, 29, 25, 27, 22, 22, 23, 25, 29, 29, 31, 33, 31, 30, 32,
-                30, 28, 24, 23]
+import datetime
 
-
-def is_hot(x):
-    return x > 28
-
-
-hot_temperatures = list(filter(is_hot, temperatures))
-minimum = min(hot_temperatures)
-maximum = max(hot_temperatures)
-avg = sum(hot_temperatures) / len(hot_temperatures)
-print(maximum, minimum, avg)
+my_time = 'Jan/15/23 12 hours, 05 mins, 33 secs'
+python_time = datetime.datetime.strptime(my_time, '%b/%d/%y %H hours, %M mins, %S secs')
+print(python_time)
+human_date = python_time.strftime('%B')
+print(human_date)
+new_date = python_time.strftime('%d.%m.%Y, %H:%M ')
+print(new_date)
