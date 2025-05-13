@@ -2,6 +2,7 @@ def test(func):
     def wrapper(wrd):
         func(wrd)
         print("finished")
+
     return wrapper
 
 
@@ -11,4 +12,3 @@ def say_hello(word):
 
 
 say_hello('Hi')
-
